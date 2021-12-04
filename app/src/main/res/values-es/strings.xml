@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="justjava">solo java</string>
+    <string name="app_name">java solo</string>
+    <string name="menu">munu</string>
+    <string name="thank_u">grasias</string>
+    <string name="click_me">mi</string>
+    <string name="more">miore</string>
+    <string name="order">orsenar</string>
+    <string name="Dine_in">dun ik</string>
+    <string name="Take_away">tok y</string>
+    <string name="order_name">"custumuor name  "</string>
+    <string name="Total_amount">titil amunte</string>
+</resources>

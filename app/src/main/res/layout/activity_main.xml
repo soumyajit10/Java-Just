@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/justjava"
+        android:textSize="30dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/justjava"
+        android:fontFamily="cursive"
+
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/menu"
+        android:id="@+id/menu"
+        style="@style/menuBar"
+
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="10dp"
+
+      />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/menu"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="150dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="-58dp"
+        android:text="@string/click_me"
+        android:onClick="menuShow"
+        android:id="@+id/swichme"
+        />
+
+    <Button
+        android:id="@+id/order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/order"
+        android:textAllCaps="true"
+        android:padding="6dp"
+        android:textSize="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="submitOrder"
+        />
+
+    <TextView
+        android:id="@+id/quantity_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_centerVertical="true"
+        android:text="@string/quantity"
+        android:background="#aa3377"
+        android:textColor="#14a76c"
+        android:textAllCaps="true"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/zero_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/button2"
+        android:layout_marginLeft="20dp"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-128dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="96dp"
+        android:layout_toLeftOf="@id/button3"
+        android:layout_toEndOf="@id/order"
+        android:onClick="increment"
+        android:text="+"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="9dp"
+        android:text="-"
+        android:onClick="decrement"
+
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/price_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/quantity_text_view"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="120dp"
+        android:text="@string/price"
+        android:background="#140696"
+        android:textColor="#ffe0bd"
+        android:textAllCaps="true"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/coffe" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ordersummary"
+
+        android:fontFamily="casual"
+        android:textSize="15dp"
+        android:layout_marginTop="210dp"
+        android:background="#ffe0bd"
+       android:id="@+id/order_summery"/>
+
+    <TextView
+        android:id="@+id/zero_zero_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="160dp"
+        android:layout_toRightOf="@id/price_text_view"
+        android:text="00"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sugar"
+        android:layout_alignParentRight="true"
+        android:id="@+id/sugar"
+        android:layout_below="@id/button3"
+        android:layout_marginTop="30dp"
+        android:textSize="30dp"
+        android:textStyle="italic"
+        android:layout_marginRight="10dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button4"
+        android:text="@string/more"
+        android:textAllCaps="true"
+        android:layout_toLeftOf="@id/sugar"
+        android:layout_marginTop="395dp"
+        android:layout_marginRight="10dp"
+        android:onClick="show"/>
+
+    <TextView
+        android:id="@+id/limit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="395dp"
+        android:layout_marginRight="50dp"
+        android:layout_toLeftOf="@id/button4"
+        android:text="0"
+        android:textSize="30dp" />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/added_cream"
+        android:textAllCaps="true"
+        android:textColor="#aa3388"
+        android:fontFamily="sans-serif"
+        android:layout_alignBottom="@id/sugar"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/cream"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="470dp"
+        android:hint="@string/your_name"
+        android:inputType="textCapWords"
+        android:id="@+id/nameplace"
+        android:textColor="@android:color/holo_green_light"/>
+<CheckBox
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="160dp"
+    android:text="@string/Payment_by_card"
+    android:id="@+id/payment_option"
+    />
+
+<LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/darker_gray"
+    android:orientation="horizontal"
+    android:layout_above="@id/order"
+    android:layout_marginBottom="10dp"
+
+    >
+    <CheckBox
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.2"
+        android:text="@string/Home_Delivery"
+        style="@style/custom_text"
+        android:textSize="12dp"
+        android:id="@+id/homedelivery_CheakBox"
+
+        />
+    <CheckBox
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/Take_away"
+        style="@style/custom_text"
+        android:layout_margin="0dp"
+        android:id="@+id/takeaway_CheckBox"/>
+    <CheckBox
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/Dine_in"
+        style="@style/custom_text"
+        android:layout_margin="0dp"
+        android:textSize="12dp"
+        android:id="@+id/dinein_CheckBox"
+        />
+
+
+</LinearLayout>
+
+</RelativeLayout>

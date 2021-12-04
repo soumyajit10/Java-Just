@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <style name="custom_text">
+        <item name="fontFamily">cursive</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">#4527A0</item>
+    </style>
+    <style name="menuBar">
+        <item name="fontFamily">monospace</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:textSize">30dp</item>
+        <item name="android:textColor">#aa3377</item>
+    </style>
+</resources>

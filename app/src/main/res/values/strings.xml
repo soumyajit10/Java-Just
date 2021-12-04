@@ -1,0 +1,25 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">java just</string>
+    <string name="justjava">Just Java</string>
+    <string name="menu">Menu</string>
+    <string name="price">price</string>
+    <string name="ordersummary">Order Summmary</string>
+    <string name="quantity">Quantity</string>
+    <string name="sugar">Sugar</string>
+    <string name="added_cream">Added cream</string>
+    <string name="your_name">Your name</string>
+    <string name="Payment_by_card">Payment By Card</string>
+    <string name="Home_Delivery">Home Delivery</string>
+    <string name="Take_away">Take away</string>
+    <string name="Dine_in">Dine in</string>
+    <string name="order">Order</string>
+    <string name="more">More</string>
+    <string name="click_me">Click Me</string>
+    <string name="thank_u">Thank you</string>
+    <string name="go_cashless">Go Cashless</string>
+    <string name="just_java_order_to">Just Java order for</string>
+    <string name="customer"> Customer Name</string>
+
+    <string name="Total_amount">Total amount</string>
+
+</resources>
